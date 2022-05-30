@@ -2,14 +2,14 @@ package util;
 
 public class Telefone {
 	
-	private static String Telefone;
+	private String Telefone;
 
-	public static String getTelefone() {
+	public String getTelefone() {
 		return Telefone;
 	}
-
-	public static void setTelefone(String telefone) {
-		Telefone = telefone;
+	public void setTelefone(String telefone) {
+		this.Telefone = telefone;
 	}
+	
 	
 }

@@ -2,14 +2,14 @@ package util;
 
 public class Celular {
 	
-	private static String Celular;
+	private String Celular;
 
-	public static String getCelular() {
+	public String getCelular() {
 		return Celular;
 	}
 
-	public static void setCelular(String celular) {
-		Celular = celular;
+	public void setCelular(String celular) {
+		this.Celular = celular;
 	}
 	public String validaCelular() {
 		if (Celular == null) {

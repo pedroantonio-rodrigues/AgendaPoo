@@ -1,5 +1,8 @@
 package application;
 import agenda.poo.Agenda;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -17,7 +20,7 @@ public class Program {
 		System.out.println("4 -  Editar contato existente");
 		System.out.println("5 -  Excluir Contato Existente ");
 		
-		Agenda agenda = new Agenda();
+		List<Agenda> agenda = new ArrayList<Agenda>();
 		
 		int opcao = 5;
 		switch(opcao) {
@@ -29,25 +32,25 @@ public class Program {
 		case 2 :
 	
 			System.out.println("Nome do contato: ");
-			agenda.Nome = sc.nextLine();
+			String nome = sc.nextLine();
 			System.out.println("Sobrenome: ");
-			agenda.Sobrenome = sc.nextLine();
+			String sobrenome = sc.nextLine();
 			System.out.println("Celular: ");
-			agenda.Celular = sc.nextLine();
+			String celular = sc.nextLine();
 			System.out.println("Telefone: ");
-			agenda.Telefone = sc.nextLine();
+			String Telefone = sc.nextLine();
 			System.out.println("Email: ");
-			agenda.Email = sc.nextLine();
+			String Email = sc.nextLine();
 			
 			break;
 		case 3 :
 			System.out.println(agenda.toString());
 			break;
 		case 4 :
-			agenda.editaContatos();
+			((Agenda) agenda).editaContatos();
 			break;
 		case 5 :
-			agenda.removeContatos();
+			((Agenda) agenda).removeContatos();
 			break;
 			
 			default :

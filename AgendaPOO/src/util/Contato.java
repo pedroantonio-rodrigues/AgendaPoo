@@ -2,21 +2,41 @@ package util;
 
 public class Contato {
 	
-	private static String nome;
-	private static String Sobrenome;
+	private String nome;
+	private String Sobrenome;
+	private String Celular;
+	private String Telefone;
+	private String Email;
 	
-	
-	public static String getNome() {
+	public String getCelular() {
+		return Celular;
+	}
+	public void setCelular(String celular) {
+		Celular = celular;
+	}
+	public String getTelefone() {
+		return Telefone;
+	}
+	public void setTelefone(String telefone) {
+		Telefone = telefone;
+	}
+	public String getEmail() {
+		return Email;
+	}
+	public void setEmail(String email) {
+		Email = email;
+	}
+	public String getNome() {
 		return nome;
 	}
-	public static void setNome(String nome) {
-		Contato.nome = nome;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
-	public static String getSobrenome() {
+	public String getSobrenome() {
 		return Sobrenome;
 	}
-	public static void setSobrenome(String sobrenome) {
-		Sobrenome = sobrenome;
+	public void setSobrenome(String sobrenome) {
+		this.Sobrenome = sobrenome;
 	}
 	
 	public String validaNome() {

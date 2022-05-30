@@ -2,14 +2,14 @@ package util;
 
 public class Email {
 	
-	private static String Email;
+	private String Email;
 
-	public static String getEmail() {
+	public String getEmail() {
 		return Email;
 	}
 
-	public static void setEmail(String email) {
-		Email = email;
+	public void setEmail(String email) {
+		this.Email = email;
 	}
 
 }
