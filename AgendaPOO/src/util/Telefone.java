@@ -1,15 +1,15 @@
 package util;
 
 public class Telefone {
-	
-	private String Telefone;
+
+	private String telefone;
 
 	public String getTelefone() {
-		return Telefone;
+		return telefone;
 	}
+
 	public void setTelefone(String telefone) {
-		this.Telefone = telefone;
+		this.telefone = telefone;
 	}
-	
-	
+
 }

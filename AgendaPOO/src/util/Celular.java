@@ -1,22 +1,23 @@
 package util;
 
 public class Celular {
-	
-	private String Celular;
+
+	private String celular;
 
 	public String getCelular() {
-		return Celular;
+		return celular;
 	}
 
 	public void setCelular(String celular) {
-		this.Celular = celular;
+		this.celular = celular;
 	}
+
 	public String validaCelular() {
-		if (Celular == null) {
+		if (celular == null) {
 			return "Digite um numero valido";
-		}else {
-			return Celular;
+		} else {
+			return celular;
 		}
 	}
-	
+
 }
