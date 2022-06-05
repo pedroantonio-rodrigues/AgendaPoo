@@ -1,33 +1,26 @@
 package util;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Contato {
 
 	private String nome;
 	private String sobrenome;
 
-	// injeção de de pendecia das classes Celular, Telefone e Email
-	private Celular celular;
-	private Telefone telefone;
-	private Email email;
+	// injeção de dependecia das classes Celular, Telefone e Email
+	private List<Celular> celulares = new ArrayList<>();
+	private List<Telefone> telefones = new ArrayList<>();
+	private List<Email> emails = new ArrayList<>();
 
-	// metodo construtor da classe Contato passando os parametros(nome, sobrenome,
-	// celular, telefone e email)
-	public Contato(String nome, String sobrenome, Celular celular, Telefone telefone, Email email) {
+	// metodo construtor da classe Contato passando os parametros(nome, sobrenome)
+	public Contato(String nome, String sobrenome) {
 		this.nome = nome;
 		this.sobrenome = sobrenome;
-		this.celular = celular;
-		this.telefone = telefone;
-		this.email = email;
 	}
 
-	
 	public Contato() {
 	
-	}
-
-
-	public Contato(String nome, String sobrenome, String celular, String telefone, String email) {
-
 	}
 
 	public String getNome() {
@@ -46,28 +39,34 @@ public class Contato {
 		this.sobrenome = sobrenome;
 	}
 
-	public Celular getCelular() {
-		return celular;
+	public List<Celular> getCelular() {
+		return celulares;
 	}
 
-	public void setCelular(Celular celular) {
-		this.celular = celular;
+	public List<Telefone> getTelefone() {
+		return telefones;
 	}
-
-	public Telefone getTelefone() {
-		return telefone;
+	
+	public List<Email> getEmail() {
+		return emails;
 	}
-
-	public void setTelefone(Telefone telefone) {
-		this.telefone = telefone;
+	public void addCelular(Celular celular) {
+		celulares.add(celular);
 	}
-
-	public Email getEmail() {
-		return email;
+	public void removeCelular(Celular celular) {
+		celulares.add(celular);
 	}
-
-	public void setEmail(Email email) {
-		this.email = email;
+	public void addTelefone(Telefone telefone) {
+		telefones.add(telefone);
+	}
+	public void removeTelefone(Telefone telefone) {
+		telefones.add(telefone);
+	}
+	public void addEmail(Email email) {
+		emails.add(email);
+	}
+	public void removeEmail(Email email) {
+		emails.add(email);
 	}
 
 	@Override
